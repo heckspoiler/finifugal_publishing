@@ -2,14 +2,23 @@
 
 
 
+
 html {
     font-size: 100%;
     box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    color: red;
     
 }
 
+::selection {
+    color: red;
+    background: yellow;
+  }
+
 body {
     display: flex;
+    flex-flow: column;
 }
 
 li {
@@ -21,7 +30,7 @@ li {
 
 p {
     color: red;
-    font-family: 'Manrope', sans-serif;;
+    
 }
 
 ul {
@@ -35,8 +44,8 @@ ul {
     margin-top: 100px;
     display: flex;
     margin-left: 18rem;
-    
     width: 100%;
+    max-height: 5rem;
 
 }
 
@@ -84,13 +93,17 @@ ul {
 .finifugal {
 
     font-weight: bold;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: red;
     -webkit-text-fill-color: white;
+
+
 }
+
+
 
 .company-info {
     display: block;
@@ -98,4 +111,95 @@ ul {
     text-orientation: upright;
     margin-top: 3rem;
     
+}
+
+/* Recent Publications Section */
+
+
+
+.section-recent {
+
+    display: flex;
+    flex-flow: column;
+    margin-top: 5rem;
+    border-top: 1px solid red;
+    margin-left: 18rem;
+
+}
+
+.container-text-recent {
+    display: flex;
+    flex-flow: column;
+
+    width: 100%;
+    max-width: 800px;
+    margin-left: 4rem;
+
+
+}
+
+.container-text-recent p{
+    text-align: left;
+    color:
+
+}
+
+
+
+.publications {
+    display: flex;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    border-top: 1px solid red;
+    padding-top: 3rem;
+    
+}
+
+.subtitle-sections {
+    color: red;
+    text-shadow: -1px 1px white;
+    font-size: 1.3rem;
+    margin-top: 4rem;
+
+    text-align: left
+   
+}
+
+.subheader-recently {
+    display: absolute;
+    color: red;
+    font-size: 1rem;
+    margin-top: 4rem;
+
+   
+}
+
+.section-recent img {
+
+    height: 50%;
+    padding: 15px;
+    background-color: white;
+    max-width: 20%;
+    transition: background-color 0.1s ease-in;
+    
+}
+
+.section-recent img:hover {
+    background: rgba(255, 122, 89, .5);
+    padding: 15px;
+}
+
+.description {
+    width: 100%;
+
+}
+
+.author {
+    font-weight: 100;
+}
+
+.year {
+    font-weight: 100;
+    font-size: 0.9rem;
 }
