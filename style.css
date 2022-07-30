@@ -87,6 +87,7 @@ ul {
     max-width: 200px;
     height: 100%;
     margin-left: 4rem;
+
     
 
 
@@ -188,11 +189,12 @@ ul {
     margin-top: auto;
     margin-bottom: auto;
     min-height: 20%;
+    background: rgba(255, 122, 89, .2);
     
 }
 
 .section-recent img:hover {
-    background: rgba(255, 122, 89, .5);
+    background: rgba(255, 122, 89, .9);
     padding: 15px;
 }
 
@@ -222,29 +224,38 @@ ul {
     justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10vw;
-    background: rgba(255, 0, 0, 0.1)
+    margin-top: 4vw;
+    
 }
 
 .employees-img {
     display: inline;
-    max-width: 200px;
-    max-height: auto;
+    width: 12.5rem;
+    height: 25rem;
 
 }
 
 
 .employees {
-    width: auto;
+
+    flex-wrap: wrap;
     display: flex;
     flex-flow: column;
-    width: 20vw;
+    min-width: 20vw;
+    min-height: 30vw;
     justify-content: center;
     align-items: center;
     background-color: white;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
+    margin: 5rem;
 
+
+}
+
+#team-title {
+    margin-left: 21vw;
+    margin-bottom: 0px;
+    border-top: 1px solid red;
+    padding-top: 2vw;
 }
 
 
@@ -258,7 +269,7 @@ ul {
         display: flex;
         flex-direction: column;
         margin-top: 0;
-        /*background-color: rgb(223, 223, 197);*/
+        
     }
     
     .ul-navbar {
@@ -320,6 +331,27 @@ ul {
         justify-content: center;
         margin-top: 5rem;
     }
+
+    .team {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 20rem;
+
+        
+        
+    }
+
+    .employees {
+        border: 1px solid;
+        height: 80%;
+        width: 100%;
+
+    }
+
+    .team img {
+        height: 100%;
+        width: 100%;
+    }
  
 }
 
@@ -332,7 +364,8 @@ ul {
         justify-content: center;
         align-items: center;
         align-content: center;
-        background-color: rgb(255,0,0, 0.2)
+
+
         
 
     }
@@ -412,6 +445,11 @@ ul {
         padding-left: auto;
         padding-right: auto;
   
+    }
+
+    #team-title {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
